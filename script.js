@@ -24,6 +24,7 @@ clearButton.addEventListener("click", () => {
 });
 
 function createGrid(number = 16) {
+  if (number === 0) number = 16;
   for (let i = 0; i < number; i++) {
     let row = document.createElement("div");
     row.classList.add("row");
