@@ -16,7 +16,7 @@ clearButton.addEventListener("click", () => {
   });
   let newGrid = Number(
     prompt(
-      "How many squares per side? Example: If you choose 64, a 64 by 64 square grid will be created."
+      "How many squares per side? Example: If you choose 16, a 16 by 16 square grid will be created."
     )
   );
   removeElementsByClass("row");
