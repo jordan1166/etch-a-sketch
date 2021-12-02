@@ -19,7 +19,7 @@ clearButton.addEventListener("click", () => {
       "How many squares per side? Example: If you choose 64, a 64 by 64 square grid will be created."
     )
   );
-  removeElementsByClass("grid-box");
+  removeElementsByClass("row");
   createGrid(newGrid);
 });
 
