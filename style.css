@@ -4,9 +4,18 @@
   box-sizing: border-box;
 }
 
-#flex-container {
+#flex-container-parent {
   display: flex;
   height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+#flex-container {
+  display: flex;
+  height: 500px;
+  width: 100vw;
   justify-content: space-evenly;
   align-content: center;
 }
@@ -21,10 +30,10 @@
   align-items: center;
 }
 
-.row {
+.column {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 25px);
-  grid-auto-rows: 25px;
+  grid-template-rows: repeat(auto-fill, 25px);
+  grid-auto-columns: 25px;
 }
 
 .clear-button {

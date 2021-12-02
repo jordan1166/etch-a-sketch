@@ -23,22 +23,22 @@ clearButton.addEventListener("click", () => {
     );
   } while (newGrid > 100);
 
-  removeElementsByClass("row");
+  removeElementsByClass("column");
   createGrid(newGrid);
 });
 
 function createGrid(number = 16) {
   if (number === 0) number = 16;
   for (let i = 0; i < number; i++) {
-    let row = document.createElement("div");
-    row.classList.add("row");
-    row.id = `row-${i + 1}`;
-    gridContainer.appendChild(row);
+    let column = document.createElement("div");
+    column.classList.add("column");
+    column.id = `column-${i + 1}`;
+    gridContainer.appendChild(column);
     for (let j = 0; j < number; j++) {
       let box = document.createElement("div");
       box.classList.add("grid-box");
       box.id = `box-${j + 1}`;
-      row.appendChild(box);
+      column.appendChild(box);
       box.addEventListener("mouseover", (e) => {
         e.target.style.backgroundColor = "blue";
       });
