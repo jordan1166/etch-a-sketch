@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-.flex-container {
+#flex-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .grid-box {
@@ -20,4 +20,10 @@
   width: 1000px;
   grid-template-rows: repeat(16, 1fr);
   grid-template-columns: repeat(16, 1fr);
+}
+
+.clear-button {
+  height: 30px;
+  width: 60px;
+  align-self: center;
 }
