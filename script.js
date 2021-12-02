@@ -14,11 +14,15 @@ clearButton.addEventListener("click", () => {
   Array.from(box).forEach((gridBox) => {
     gridBox.style.backgroundColor = "";
   });
-  let newGrid = Number(
-    prompt(
-      "How many squares per side? Example: If you choose 16, a 16 by 16 square grid will be created."
-    )
-  );
+  let newGrid = 0;
+  do {
+    newGrid = Number(
+      prompt(
+        "How many squares per side? Example: If you choose 16, a 16 by 16 square grid will be created. (The highest number you can choose is 100)"
+      )
+    );
+  } while (newGrid > 100);
+
   removeElementsByClass("row");
   createGrid(newGrid);
 });
